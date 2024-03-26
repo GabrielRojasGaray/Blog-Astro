@@ -1,0 +1,16 @@
+---
+const { title, url } = Astro.props;
+---
+
+<li><a href={url}> <button class="tag">{title}</button> </a></li>
+
+<style>
+    .tag {
+        margin: 0.25em;
+        border: dotted 1px #a1a1a1;
+        border-radius: 0.5em;
+        padding: 0.5em 1em;
+        font-size: 1.15em;
+        background-color: #f8fcfd;
+    }
+</style>

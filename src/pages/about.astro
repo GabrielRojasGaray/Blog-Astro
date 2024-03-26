@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Sobre mi";
+
 const identity = {
     firstName: "Gabriel",
     country: "Chile",
@@ -19,11 +19,13 @@ const skills = [
 ];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
+const pageTitle = "Sobre mi";
 ---
 
-<BaseLayout title={pageTitle}>
+
+<BaseLayout pageTitle={pageTitle}>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
     <p>
@@ -69,3 +71,4 @@ const goal = 3;
         )
     }
 </BaseLayout>
+
